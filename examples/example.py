@@ -1,7 +1,8 @@
 import sys
 
 import matplotlib.pyplot as plt
-import socolors
+
+import socolors  # noqa: F401
 
 try:
     plt.style.use(sys.argv[1])
