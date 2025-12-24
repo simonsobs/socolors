@@ -1,0 +1,51 @@
+# Matplotlib style for scientific plotting
+
+# Set color cycle: blue, green, yellow, red, violet, gray
+axes.prop_cycle : cycler('color', ['0077BB', '33BBEE', '009988', 'F26522', 'CC3311', 'EE3377', 'BBBBBB'])
+
+# Set default figure size
+figure.figsize : 3.5, 3.0
+
+figure.constrained_layout.use: True
+figure.constrained_layout.h_pad: 0.005
+figure.constrained_layout.w_pad: 0.005
+figure.constrained_layout.hspace: 0.005
+figure.constrained_layout.wspace: 0.005
+
+# Set x axis
+xtick.direction : in
+xtick.major.size : 3
+xtick.major.width : 0.5
+xtick.minor.size : 1.5
+xtick.minor.width : 0.5
+xtick.minor.visible : True
+xtick.top : True
+
+# Set y axis
+ytick.direction : in
+ytick.major.size : 3
+ytick.major.width : 0.5
+ytick.minor.size : 1.5
+ytick.minor.width : 0.5
+ytick.minor.visible : True
+ytick.right : True
+
+# Set line widths
+axes.linewidth : 0.5
+grid.linewidth : 0.5
+lines.linewidth : 2.
+
+# Remove legend frame
+legend.frameon : False
+legend.fontsize: 10
+
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.05
+
+# Use sans serif-fonts
+font.family : STIXGeneral
+font.sans-serif: Times New Roman, Times, STIXGeneral, serif
+font.size: 10
+mathtext.fontset: stix
+

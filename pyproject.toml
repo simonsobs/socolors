@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+socat = ["alembic/*", "alembic.ini", "alembic/versions/*"]
+
+[tool.setuptools.packages.find]
+exclude=["*alembic*"]
+
+[project]
+name = "socolors"
+version = "0.0.1"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff==0.14.5", # If you change this, also change the version in the CI
+    "pre-commit"
+]
+
+[tool.ruff.lint]
+preview = true
+extend-select = ["I", "DOC501"]
+# ignore = ["D417", "D400", "D200", "D103", "D102", "D101", "D100"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
