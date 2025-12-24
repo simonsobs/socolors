@@ -1,6 +1,14 @@
 SOColors
 ========
 
+Installing
+----------
+
+This is a python package, and can be installed using `pip install socolors`.
+
+About
+-----
+
 This tool contains style sheets, heavily inspired by
 [scienceplots](https://github.com/garrettj403/SciencePlots),
 for styling figures produced with matplotlib. It allows you to prepare figures
