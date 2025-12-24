@@ -7,13 +7,16 @@ for styling figures produced with matplotlib. It allows you to prepare figures
 already designed for journal styles. Notably it:
 
 a) Uses the main SO color as a line color (branding can be fun too!)
+
 b) Use a colorblind-friendly default set of line colors from
    [Paul Tol's notes](https://sronpersonalpages.nl/~pault/). The default matplotlib
    line colors are not colorblind friendly.
+
 c) Uses the correct fonts and plot sizes for various journals, providing
    consistency. It also allows one-line swapping between journal styles, reducing
    any duplicated effort in the case where we need to swap journals at the last
    minute.
+
 d) It turns on 'constrained layout' by default, providing journal-ready figure
    margins.
 
@@ -22,11 +25,14 @@ Best Practices
 
 a) Always save your figures in a _vector_ format like `.pdf` or `.svg` whenever
    possible, especially when you are going to be including them in a publication.
+
 b) Make sure that your figures look good in your paper _without_ using tools like
    `trim` or scaling them with things like `\columnwidth`. PDFs have dimensions,
    and if they're correct everything will fit without needing to do this.
+
 c) If you must save as a `.png` or `.jpg` (known as 'raster' formats), make sure
    to set `dpi=300` for high quality outputs.
+
 d) If you need to modify the size of your figure, try to only do so vertically.
    The units of `figsize=()` are in inches; for the journals below we state
    their column width or 'full width' for figures than span both columns. Use
