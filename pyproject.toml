@@ -3,14 +3,11 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
-socat = ["alembic/*", "alembic.ini", "alembic/versions/*"]
-
-[tool.setuptools.packages.find]
-exclude=["*alembic*"]
+socolors = ["styles/*.mplstyle", "styles/journals/*.mplstyle"]
 
 [project]
 name = "socolors"
-version = "0.0.1"
+version = "0.0.2"
 requires-python = ">=3.11"
 dependencies = [
     "matplotlib"
